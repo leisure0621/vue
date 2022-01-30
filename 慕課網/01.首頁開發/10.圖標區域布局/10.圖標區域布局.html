@@ -1,0 +1,666 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>10.圖標區域布局 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../11.圖標區域邏輯實現/11.圖標區域邏輯實現.html" />
+    
+    
+    <link rel="prev" href="../09.首頁輪播圖/09.首頁輪播圖.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    慕課網
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" >
+            
+                <span>
+            
+                    
+                    01.首頁開發
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../01.環境配置/01.環境配置.html">
+            
+                <a href="../01.環境配置/01.環境配置.html">
+            
+                    
+                    01.環境配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="../02.項目結構與說明/02.項目結構與說明.html">
+            
+                <a href="../02.項目結構與說明/02.項目結構與說明.html">
+            
+                    
+                    02.項目結構與說明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3" data-path="../03.Vue項目的基本結構與說明/03.Vue項目的基本結構與說明.html">
+            
+                <a href="../03.Vue項目的基本結構與說明/03.Vue項目的基本結構與說明.html">
+            
+                    
+                    03.Vue項目的基本結構與說明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.4" data-path="../04.優化程式碼結構/04.優化程式碼結構.html">
+            
+                <a href="../04.優化程式碼結構/04.優化程式碼結構.html">
+            
+                    
+                    04.優化程式碼結構
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.5" data-path="../05.單_多頁面說明與跳轉功能/05.單_多頁面說明與跳轉功能.html">
+            
+                <a href="../05.單_多頁面說明與跳轉功能/05.單_多頁面說明與跳轉功能.html">
+            
+                    
+                    05.單_多頁面說明與跳轉功能
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.6" data-path="../06.項目初始化/06.項目初始化.html">
+            
+                <a href="../06.項目初始化/06.項目初始化.html">
+            
+                    
+                    06.項目初始化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.7" data-path="../07.Header區域開發/07.Header區域開發.html">
+            
+                <a href="../07.Header區域開發/07.Header區域開發.html">
+            
+                    
+                    07.Header區域開發
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.8" data-path="../08.引入自定義樣式/08.引入自定義樣式.html">
+            
+                <a href="../08.引入自定義樣式/08.引入自定義樣式.html">
+            
+                    
+                    08.引入自定義樣式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.9" data-path="../09.首頁輪播圖/09.首頁輪播圖.html">
+            
+                <a href="../09.首頁輪播圖/09.首頁輪播圖.html">
+            
+                    
+                    09.首頁輪播圖
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.1.10" data-path="10.圖標區域布局.html">
+            
+                <a href="10.圖標區域布局.html">
+            
+                    
+                    10.圖標區域布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.11" data-path="../11.圖標區域邏輯實現/11.圖標區域邏輯實現.html">
+            
+                <a href="../11.圖標區域邏輯實現/11.圖標區域邏輯實現.html">
+            
+                    
+                    11.圖標區域邏輯實現
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.12" data-path="../12.熱銷推薦組件開發/12.熱銷推薦組件開發.html">
+            
+                <a href="../12.熱銷推薦組件開發/12.熱銷推薦組件開發.html">
+            
+                    
+                    12.熱銷推薦組件開發
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.13" data-path="../13.周末遊組件開發/13.周末遊組件開發.html">
+            
+                <a href="../13.周末遊組件開發/13.周末遊組件開發.html">
+            
+                    
+                    13.周末遊組件開發
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.14" data-path="../14.模擬發送ajax請求/14.模擬發送ajax請求.html">
+            
+                <a href="../14.模擬發送ajax請求/14.模擬發送ajax請求.html">
+            
+                    
+                    14.模擬發送ajax請求
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.15" data-path="../15.父子組件傳值/15.父子組件傳值.html">
+            
+                <a href="../15.父子組件傳值/15.父子組件傳值.html">
+            
+                    
+                    15.父子組件傳值
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >10.圖標區域布局</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x5716;&#x6A19;&#x5340;&#x57DF;&#x5E03;&#x5C40;">&#x5716;&#x6A19;&#x5340;&#x57DF;&#x5E03;&#x5C40;</h1>
+
+<ol>
+<li><a href="#s1">&#x6B64;&#x6B21;&#x9810;&#x5B8C;&#x6210;&#x529F;&#x80FD;</a></li>
+<li><a href="#s2">&#x65B0;&#x589E; Icons.vue &#x7D44;&#x4EF6;&#x4E26;&#x8A2D;&#x5B9A;&#x6A23;&#x5F0F;</a></li>
+</ol>
+<hr>
+<h1 id="01-&#x6B64;&#x6B21;&#x9810;&#x5B8C;&#x6210;&#x529F;&#x80FD;">01. &#x6B64;&#x6B21;&#x9810;&#x5B8C;&#x6210;&#x529F;&#x80FD;<span id="s1"></span></h1>
+<ul>
+<li>&#x6B64;&#x7BC0;&#x8AB2;&#x4E3B;&#x8981;&#x662F;&#x5B8C;&#x6210;&#x5716;&#x6A19;&#x5340;&#x57DF;&#x7684;&#x9801;&#x9762;&#x5E03;&#x5C40;</li>
+</ul>
+<p><img src="image/01.dio.svg"></p>
+<h1 id="02-&#x65B0;&#x589E;-iconsvue-&#x7D44;&#x4EF6;&#x4E26;&#x8A2D;&#x5B9A;&#x6A23;&#x5F0F;">02. &#x65B0;&#x589E; Icons.vue &#x7D44;&#x4EF6;&#x4E26;&#x8A2D;&#x5B9A;&#x6A23;&#x5F0F;<span id="s2"></span></h1>
+<ul>
+<li><p>&#x6B65;&#x9A5F;&#x4E00; : &#x5728; <code>{workspace}\{project_name}\src\pages\home\components</code> &#x4E0B;&#x65B0;&#x589E; <code>Icons.vue</code></p>
+</li>
+<li><p>&#x6B65;&#x9A5F;&#x4E8C; : &#x8CE6;&#x4E88; <code>Icons.vue</code> &#x6587;&#x4EF6;&#x521D;&#x59CB;&#x5167;&#x5BB9;</p>
+</li>
+</ul>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>icons<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+  name: <span class="hljs-string">&apos;HomeIcons&apos;</span>
+}
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">style</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;stylus&quot;</span> <span class="hljs-attr">scoped</span>&gt;</span><span class="undefined">
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+</code></pre>
+<ul>
+<li>&#x6B65;&#x9A5F;&#x4E09; : &#x5728; <code>{workspace}\{project_name}\src\pages\home\Home.vue</code> &#x65B0;&#x589E; Icons &#x7D44;&#x4EF6;</li>
+</ul>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">home-header</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">home-header</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">home-swiper</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">home-swiper</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">home-icons</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">home-icons</span>&gt;</span> <span class="hljs-comment">&lt;!-- 3. &#x4F7F;&#x7528; Icons &#x7D44;&#x4EF6; --&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+<span class="hljs-keyword">import</span> HomeHeader <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./components/Header&apos;</span>
+<span class="hljs-keyword">import</span> HomeSwiper <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./components/Swiper&apos;</span>
+<span class="hljs-keyword">import</span> HomeIcons <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./components/Icons&apos;</span> <span class="hljs-comment">// 1. &#x5F15;&#x5165; Icons &#x7D44;&#x4EF6;</span>
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+  name: <span class="hljs-string">&apos;Home&apos;</span>,
+  components: {
+    HomeHeader,
+    HomeSwiper,
+    HomeIcons <span class="hljs-comment">// 2. &#x8A3B;&#x518A; Icons &#x7D44;&#x4EF6;</span>
+  }
+}
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="undefined">
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+</code></pre>
+<ul>
+<li>&#x6B65;&#x9A5F;&#x56DB; : &#x8CE6;&#x4E88; Icons.vue &#x7D44;&#x4EF6;&#x9810;&#x8A2D;&#x9AD8;&#x5EA6;</li>
+</ul>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icons&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+  name: <span class="hljs-string">&apos;HomeIcons&apos;</span>
+}
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">style</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;stylus&quot;</span> <span class="hljs-attr">scoped</span>&gt;</span><span class="undefined">
+  .icons
+    // 1. &#x6490;&#x8D77;&#x5340;&#x57DF;&#x9810;&#x8A2D;&#x9AD8;&#x5EA6;
+    width 100%
+    overflow: hidden
+    height: 0
+    padding-bottom: 50% // 2. &#x4F9D;&#x7167;&#x5BEC;&#x5EA6;&#x6BD4;&#x6490;&#x9AD8;50%
+    background: green
+    .icon
+      // 3. &#x5B50;&#x5340;&#x57DF;&#x6490;&#x9AD8;25%
+      float left
+      width 25%
+      padding-bottom 25%
+      background-color red
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+</code></pre>
+<ul>
+<li>&#x6B65;&#x9A5F;&#x4E94; : &#x6DFB;&#x52A0; <code>{workspace}\{project_name}\src\assets\styles\variables.styl</code> &#x53C3;&#x6578;</li>
+</ul>
+<pre><code class="lang-css">$darkTextColor = #333
+</code></pre>
+<ul>
+<li>&#x6B65;&#x9A5F;&#x4E94; : &#x88DC;&#x8DB3;&#x9801;&#x9762;&#x6A19;&#x7C64;&#x8207;&#x6A23;&#x5F0F;</li>
+</ul>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icons&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-img&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-img-content&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20209/36d99efa6f2aa91f1ec9d18ce57fd5e3.png&quot;</span> /&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-desc&quot;</span>&gt;</span>&#x71B1;&#x9580;&#x666F;&#x9EDE;<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+  name: <span class="hljs-string">&apos;HomeIcons&apos;</span>
+}
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">style</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;stylus&quot;</span> <span class="hljs-attr">scoped</span>&gt;</span><span class="css">
+  @<span class="hljs-keyword">import</span> <span class="hljs-string">&apos;~styles/variables.styl&apos;</span>
+  .icons
+    width <span class="hljs-number">100%</span>
+    overflow: hidden
+    height: <span class="hljs-number">0</span>
+    padding-bottom: <span class="hljs-number">50%</span>
+    .icon // <span class="hljs-number">1</span>. icon&#x56FA;&#x5B9A;&#x5BEC;&#x9AD8;&#x6BD4;&#x4F8B;
+      position: relative
+      float left
+      width <span class="hljs-number">25%</span>
+      padding-bottom <span class="hljs-number">25%</span>
+      overflow hidden
+      height <span class="hljs-number">0</span>
+      .icon-img // <span class="hljs-number">2</span>. &#x5716;&#x7247;&#x5C45;&#x4E2D;
+        position: absolute
+        top <span class="hljs-number">0</span>
+        left <span class="hljs-number">0</span>
+        right <span class="hljs-number">0</span>
+        bottom: .<span class="hljs-number">44rem</span>
+        box-sizing: border-box
+        padding: .<span class="hljs-number">1rem</span>
+        .icon-img-content // <span class="hljs-number">3</span>. &#x5716;&#x7247;&#x5927;&#x5C0F;&#x7B26;&#x5408;&#x5340;&#x57DF;&#x5927;&#x5C0F;
+          display block
+          height <span class="hljs-number">100%</span>
+          margin: <span class="hljs-number">0</span> auto
+      .icon-desc // <span class="hljs-number">4</span>. &#x6587;&#x5B57;&#x5C45;&#x4E2D;
+        position: absolute
+        left <span class="hljs-number">0</span>
+        right <span class="hljs-number">0</span>
+        bottom: <span class="hljs-number">0</span>
+        height .<span class="hljs-number">44rem</span>
+        line-height: .<span class="hljs-number">44rem</span>
+        color: $darkTextColor // <span class="hljs-number">5</span>. &#x53C3;&#x6578;&#x4F86;&#x81EA; variables.styl
+        text-align: center
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+</code></pre>
+<ul>
+<li>&#x6B65;&#x9A5F;&#x516D; : &#x756B;&#x9762;&#x9810;&#x89BD;</li>
+</ul>
+<p><img src="image/02.dio.svg"></p>
+<hr>
+<ul>
+<li>&#x5B78;&#x7FD2;&#x5730;&#x5716;&#x5C0D;&#x61C9;: <ul>
+<li><u>&#x6155;&#x514B;&#x7DB2;</u> &gt; <u>&#x6B65;&#x9AA4;&#x4E8C;&#xFF1A;Vue&#x57FA;&#x7840;+&#x4EFF;&#x53BB;&#x54EA;&#x7F51;&#x7535;&#x5546;&#x5B9E;&#x6218;</u> &gt; <u>4.Vue&#x4E0E;React&#x9AD8;&#x7EA7;&#x6846;&#x67B6;&#x5F00;&#x53D1;</u> &gt; <u>&#x9879;&#x76EE;-&#x9996;&#x9875;&#x5F00;&#x53D1;</u> &gt; <u>2-7.Vue&#x9879;&#x76EE;&#x9996;&#x9875;-&#x56FE;&#x6807;&#x533A;&#x57DF;&#x9875;&#x9762;&#x5E03;&#x5C40;</u></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>export default : &#x9810;&#x8A2D;&#x532F;&#x51FA;&#xFF0C;&#x4E00;&#x500B;&#x6A94;&#x6848;&#x53EA;&#x80FD;&#x4E00;&#x500B; (&#x985E;&#x4F3C;&#x5F8C;&#x7AEF;&#x7684; public class&#xFF0C;&#x5340;&#x5225;&#x5728;&#x65BC;&#x4E00;&#x500B;&#x6A94;&#x6848;&#x53EA;&#x80FD;&#x4E00;&#x500B; export default)</li>
+</ul>
+<hr>
+<ul>
+<li><a href="https://wcc723.github.io/development/2020/03/25/import-export/" target="_blank">&#x5B8C;&#x5168;&#x89E3;&#x6790; JavaScript import&#x3001;export</a></li>
+<li><a href="https://segmentfault.com/a/1190000022393344" target="_blank">export default &#x4E3A;&#x4F55;&#x7A81;&#x7136;&#x6CA1;&#x7528;&#x4E86;&#xFF1F;</a></li>
+<li><a href="https://cxybb.com/article/weixin_39015132/83573896" target="_blank">Vue: export default&#x4E2D;&#x7684;name&#x5C5E;&#x6027;&#x5230;&#x5E95;&#x6709;&#x5565;&#x4F5C;&#x7528;&#x5462;&#xFF1F;</a></li>
+<li><a href="http://www.noobyard.com/article/p-xrabotxp-br.html" target="_blank">export default {} &#x548C;new Vue()&#x533A;&#x522B;</a></li>
+</ul>
+
+<script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../09.首頁輪播圖/09.首頁輪播圖.html" class="navigation navigation-prev " aria-label="Previous page: 09.首頁輪播圖">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../11.圖標區域邏輯實現/11.圖標區域邏輯實現.html" class="navigation navigation-next " aria-label="Next page: 11.圖標區域邏輯實現">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"10.圖標區域布局","level":"1.2.1.10","depth":3,"next":{"title":"11.圖標區域邏輯實現","level":"1.2.1.11","depth":3,"path":"慕課網/01.首頁開發/11.圖標區域邏輯實現/11.圖標區域邏輯實現.md","ref":"慕課網/01.首頁開發/11.圖標區域邏輯實現/11.圖標區域邏輯實現.md","articles":[]},"previous":{"title":"09.首頁輪播圖","level":"1.2.1.9","depth":3,"path":"慕課網/01.首頁開發/09.首頁輪播圖/09.首頁輪播圖.md","ref":"慕課網/01.首頁開發/09.首頁輪播圖/09.首頁輪播圖.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-search","search-pro","back-to-top-button","code","pageview-count","popup"],"pluginsConfig":{"search-pro":{"cutWordLib":"nodejieba","defineWord":["小需求","基础建设"]},"popup":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"pageview-count":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"慕課網/01.首頁開發/10.圖標區域布局/10.圖標區域布局.md","mtime":"2022-01-30T07:59:32.822Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-01-30T08:08:54.766Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
