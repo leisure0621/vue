@@ -1,0 +1,919 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>15.父子組件傳值 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="../14.模擬發送ajax請求/14.模擬發送ajax請求.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    慕課網
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" >
+            
+                <span>
+            
+                    
+                    01.首頁開發
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../01.環境配置/01.環境配置.html">
+            
+                <a href="../01.環境配置/01.環境配置.html">
+            
+                    
+                    01.環境配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="../02.項目結構與說明/02.項目結構與說明.html">
+            
+                <a href="../02.項目結構與說明/02.項目結構與說明.html">
+            
+                    
+                    02.項目結構與說明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3" data-path="../03.Vue項目的基本結構與說明/03.Vue項目的基本結構與說明.html">
+            
+                <a href="../03.Vue項目的基本結構與說明/03.Vue項目的基本結構與說明.html">
+            
+                    
+                    03.Vue項目的基本結構與說明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.4" data-path="../04.優化程式碼結構/04.優化程式碼結構.html">
+            
+                <a href="../04.優化程式碼結構/04.優化程式碼結構.html">
+            
+                    
+                    04.優化程式碼結構
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.5" data-path="../05.單_多頁面說明與跳轉功能/05.單_多頁面說明與跳轉功能.html">
+            
+                <a href="../05.單_多頁面說明與跳轉功能/05.單_多頁面說明與跳轉功能.html">
+            
+                    
+                    05.單_多頁面說明與跳轉功能
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.6" data-path="../06.項目初始化/06.項目初始化.html">
+            
+                <a href="../06.項目初始化/06.項目初始化.html">
+            
+                    
+                    06.項目初始化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.7" data-path="../07.Header區域開發/07.Header區域開發.html">
+            
+                <a href="../07.Header區域開發/07.Header區域開發.html">
+            
+                    
+                    07.Header區域開發
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.8" data-path="../08.引入自定義樣式/08.引入自定義樣式.html">
+            
+                <a href="../08.引入自定義樣式/08.引入自定義樣式.html">
+            
+                    
+                    08.引入自定義樣式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.9" data-path="../09.首頁輪播圖/09.首頁輪播圖.html">
+            
+                <a href="../09.首頁輪播圖/09.首頁輪播圖.html">
+            
+                    
+                    09.首頁輪播圖
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.10" data-path="../10.圖標區域布局/10.圖標區域布局.html">
+            
+                <a href="../10.圖標區域布局/10.圖標區域布局.html">
+            
+                    
+                    10.圖標區域布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.11" data-path="../11.圖標區域邏輯實現/11.圖標區域邏輯實現.html">
+            
+                <a href="../11.圖標區域邏輯實現/11.圖標區域邏輯實現.html">
+            
+                    
+                    11.圖標區域邏輯實現
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.12" data-path="../12.熱銷推薦組件開發/12.熱銷推薦組件開發.html">
+            
+                <a href="../12.熱銷推薦組件開發/12.熱銷推薦組件開發.html">
+            
+                    
+                    12.熱銷推薦組件開發
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.13" data-path="../13.周末遊組件開發/13.周末遊組件開發.html">
+            
+                <a href="../13.周末遊組件開發/13.周末遊組件開發.html">
+            
+                    
+                    13.周末遊組件開發
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.14" data-path="../14.模擬發送ajax請求/14.模擬發送ajax請求.html">
+            
+                <a href="../14.模擬發送ajax請求/14.模擬發送ajax請求.html">
+            
+                    
+                    14.模擬發送ajax請求
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.1.15" data-path="15.父子組件傳值.html">
+            
+                <a href="15.父子組件傳值.html">
+            
+                    
+                    15.父子組件傳值
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >15.父子組件傳值</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x7236;&#x5B50;&#x7D44;&#x4EF6;&#x50B3;&#x503C;">&#x7236;&#x5B50;&#x7D44;&#x4EF6;&#x50B3;&#x503C;</h1>
+
+<ol>
+<li><a href="#s1">&#x4FEE;&#x6539; Hader &#x4F7F;&#x8CC7;&#x6599;&#x6E90;&#x70BA;&#x7236;&#x5B50;&#x7D44;&#x4EF6;&#x50B3;&#x503C;</a></li>
+<li><a href="#s2">&#x4FEE;&#x6539; Swiper &#x4F7F;&#x8CC7;&#x6599;&#x6E90;&#x70BA;&#x7236;&#x5B50;&#x7D44;&#x4EF6;&#x50B3;&#x503C;</a></li>
+<li><a href="#s3">&#x600E;&#x9EBC;&#x5C07;&#x5176;&#x4ED6;&#x7684;&#x7D44;&#x4EF6;&#x6539;&#x6210;&#x7236;&#x5B50;&#x7D44;&#x4EF6;&#x50B3;&#x503C;&#x5462; ?</a></li>
+<li><a href="#s4">&#x8B93; Icons &#x7D44;&#x4EF6;&#x4E0D;&#x5DE6;&#x53F3;&#x6EFE;&#x52D5;</a></li>
+<li><a href="#s5">&#x600E;&#x9EBC;&#x4FEE;&#x6539;&#x9805;&#x76EE;&#x540D;&#x7A31; ?</a></li>
+</ol>
+<hr>
+<h1 id="01-&#x4FEE;&#x6539;-hader-&#x4F7F;&#x8CC7;&#x6599;&#x6E90;&#x70BA;&#x7236;&#x5B50;&#x7D44;&#x4EF6;&#x50B3;&#x503C;">01. &#x4FEE;&#x6539; Hader &#x4F7F;&#x8CC7;&#x6599;&#x6E90;&#x70BA;&#x7236;&#x5B50;&#x7D44;&#x4EF6;&#x50B3;&#x503C;<span id="s1"></span></h1>
+<ul>
+<li>&#x6B65;&#x9A5F;&#x4E00; : &#x5728; <code>{workspace}\{project_name}\src\pages\home\Home.vue</code> &#x65B0;&#x589E;&#x7236;&#x7D44;&#x4EF6;&#x7684;&#x503C;&#xFF0C;&#x4E26;&#x50B3;&#x905E;&#x7D66;&#x5B50;&#x7D44;&#x4EF6; <code>{workspace}\{project_name}\src\pages\home\components\Header.vue</code><ul>
+<li><code>:city</code> : &#x8868;&#x793A;&#x5B50;&#x7D44;&#x4EF6;&#x63A5;&#x6536;&#x53C3;&#x6578;&#x7684;&#x53C3;&#x6578;</li>
+<li>data &#x4E2D;&#x7684; city &#x8868;&#x793A;&#x6211;&#x5011;&#x6240;&#x8A2D;&#x5B9A;&#x7684;&#x53C3;&#x6578;</li>
+<li><code>:city=&quot;city&quot;</code> : &#x8868;&#x793A;&#x5B50;&#x7D44;&#x4EF6;&#x4E2D;&#x540D;&#x53EB; city &#x7684;&#x53C3;&#x6578;&#x8981;&#x63A5;&#x6536;&#x7236;&#x7D44;&#x4EF6;&#x50B3;&#x7684; city &#x7576;&#x503C;</li>
+</ul>
+</li>
+</ul>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">home-header</span> <span class="hljs-attr">:city</span>=<span class="hljs-string">&quot;city&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">home-header</span>&gt;</span> <span class="hljs-comment">&lt;!-- 2. &#x53C3;&#x6578;&#x50B3;&#x905E; --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">home-swiper</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">home-swiper</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">home-icons</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">home-icons</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">home-recommend</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">home-recommend</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">home-weekend</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">home-weekend</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+<span class="hljs-keyword">import</span> HomeHeader <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./components/Header&apos;</span>
+<span class="hljs-keyword">import</span> HomeSwiper <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./components/Swiper&apos;</span>
+<span class="hljs-keyword">import</span> HomeIcons <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./components/Icons&apos;</span>
+<span class="hljs-keyword">import</span> HomeRecommend <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./components/Recommend&apos;</span>
+<span class="hljs-keyword">import</span> HomeWeekend <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./components/Weekend&apos;</span>
+<span class="hljs-keyword">import</span> axios <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;axios&apos;</span>
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+  name: <span class="hljs-string">&apos;Home&apos;</span>,
+  components: {
+    HomeHeader,
+    HomeSwiper,
+    HomeIcons,
+    HomeRecommend,
+    HomeWeekend
+  },
+  data () {
+    <span class="hljs-keyword">return</span> {
+      city: <span class="hljs-string">&apos;&apos;</span> <span class="hljs-comment">// 1. &#x8A2D;&#x5B9A;&#x53C3;&#x6578;&#x503C;</span>
+    }
+  },
+  methods: {
+    getHomeInfo () {
+      axios.get(<span class="hljs-string">&apos;/static/mock/index.json&apos;</span>)
+        .then(<span class="hljs-keyword">this</span>.getHomeInfoSucc)
+    },
+    getHomeInfoSucc (res) {
+      <span class="hljs-built_in">console</span>.log(res)
+    }
+  },
+  mounted () {
+    <span class="hljs-keyword">this</span>.getHomeInfo()
+  }
+}
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="undefined">
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+</code></pre>
+<ul>
+<li>&#x6B65;&#x9A5F;&#x4E8C; : &#x5B50;&#x7D44;&#x4EF6; <code>{workspace}\{project_name}\src\pages\home\components\Header.vue</code> &#x63A5;&#x6536;&#x7236;&#x7D44;&#x4EF6; <code>{workspace}\{project_name}\src\pages\home\Home.vue</code> &#x50B3;&#x904E;&#x4F86;&#x7684;&#x503C;</li>
+</ul>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;header&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;header-left&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;iconfont back-icon&quot;</span>&gt;</span>&amp;#xe624;<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;header-input&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;iconfont&quot;</span>&gt;</span>&amp;#xe632;<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+      &#x8F38;&#x5165;&#x57CE;&#x5E02;/&#x666F;&#x9EDE;/&#x904A;&#x73A9;&#x4E3B;&#x9898;
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;header-right&quot;</span>&gt;</span>
+      {{this.city}} <span class="hljs-comment">&lt;!-- 2. &#x4F7F;&#x7528; this &#x9019;&#x500B;&#x65B9;&#x6CD5;&#x4F86;&#x653E;&#x7F6E; props &#x4E2D;&#x63A5;&#x6536;&#x5230;&#x7684;&#x53C3;&#x6578; --&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;iconfont arrow-icon&quot;</span>&gt;</span>&amp;#xe64a;<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+  name: <span class="hljs-string">&apos;HomeHeader&apos;</span>,
+  <span class="hljs-comment">// 1. &#x8A2D;&#x5B9A;&#x63A5;&#x6536;&#x7684;&#x53C3;&#x6578;&#x8207;&#x53C3;&#x6578;&#x985E;&#x578B;</span>
+  props: {
+    city: <span class="hljs-built_in">String</span> <span class="hljs-comment">// 3. String &#x8868;&#x793A;&#x63A5;&#x6536;&#x7684;&#x53C3;&#x6578;&#x578B;&#x614B;&#x5FC5;&#x9808;&#x662F; String &#x5426;&#x5247;&#x6703;&#x5831;&#x932F;</span>
+  }
+}
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">style</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;stylus&quot;</span> <span class="hljs-attr">scoped</span>&gt;</span><span class="css">
+  @<span class="hljs-keyword">import</span> <span class="hljs-string">&apos;~styles/variables.styl&apos;</span>
+  .header
+    display: flex
+    line-height: $headerHeight
+    background: $bgColor
+    color: #fff
+    .header-left
+      width: .<span class="hljs-number">64rem</span>
+      float: left
+      .back-icon
+        text-align: center
+        font-size: .<span class="hljs-number">4rem</span>
+    .header-input
+      flex: <span class="hljs-number">1</span>
+      height: .<span class="hljs-number">64rem</span>
+      line-height: .<span class="hljs-number">64rem</span>
+      margin-top: .<span class="hljs-number">12rem</span>
+      margin-left: .<span class="hljs-number">2rem</span>
+      padding-left: .<span class="hljs-number">2rem</span>
+      background: #fff
+      border-radius: .<span class="hljs-number">1rem</span>
+      color: #ccc
+    .header-right
+      width: <span class="hljs-number">1.24rem</span>
+      float: right
+      text-align: center
+      .arrow-icon
+        margin-left: -.<span class="hljs-number">04rem</span>
+        font-size: .<span class="hljs-number">24rem</span>
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+</code></pre>
+<ul>
+<li>&#x6700;&#x7D42; : &#x4FEE;&#x6539; <code>{workspace}\{project_name}\src\pages\home\Home.vue</code> &#xFF0C;&#x53D6;&#x5F97; ajax &#x56DE;&#x50B3;&#x7684; data &#x4E26;&#x8CE6;&#x503C;</li>
+</ul>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">home-header</span> <span class="hljs-attr">:city</span>=<span class="hljs-string">&quot;city&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">home-header</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">home-swiper</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">home-swiper</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">home-icons</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">home-icons</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">home-recommend</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">home-recommend</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">home-weekend</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">home-weekend</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+<span class="hljs-keyword">import</span> HomeHeader <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./components/Header&apos;</span>
+<span class="hljs-keyword">import</span> HomeSwiper <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./components/Swiper&apos;</span>
+<span class="hljs-keyword">import</span> HomeIcons <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./components/Icons&apos;</span>
+<span class="hljs-keyword">import</span> HomeRecommend <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./components/Recommend&apos;</span>
+<span class="hljs-keyword">import</span> HomeWeekend <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./components/Weekend&apos;</span>
+<span class="hljs-keyword">import</span> axios <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;axios&apos;</span>
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+  name: <span class="hljs-string">&apos;Home&apos;</span>,
+  components: {
+    HomeHeader,
+    HomeSwiper,
+    HomeIcons,
+    HomeRecommend,
+    HomeWeekend
+  },
+  data () {
+    <span class="hljs-keyword">return</span> {
+      city: <span class="hljs-string">&apos;&apos;</span>
+    }
+  },
+  methods: {
+    getHomeInfo () {
+      axios.get(<span class="hljs-string">&apos;/static/mock/index.json&apos;</span>)
+        .then(<span class="hljs-keyword">this</span>.getHomeInfoSucc)
+    },
+    getHomeInfoSucc (res) {
+      res = res.data
+      <span class="hljs-keyword">if</span> (res.ret &amp;&amp; res.data) { <span class="hljs-comment">// &#x5224;&#x65B7;&#x5F8C;&#x7AEF;&#x6210;&#x529F;&#x97FF;&#x61C9;&#xFF0C;&#x4E14;&#x6709;&#x503C;</span>
+        <span class="hljs-keyword">const</span> data = res.data
+        <span class="hljs-keyword">this</span>.city = data.city
+      }
+    }
+  },
+  mounted () {
+    <span class="hljs-keyword">this</span>.getHomeInfo()
+  }
+}
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="undefined">
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+</code></pre>
+<h1 id="02-&#x4FEE;&#x6539;-swiper-&#x4F7F;&#x8CC7;&#x6599;&#x6E90;&#x70BA;&#x7236;&#x5B50;&#x7D44;&#x4EF6;&#x50B3;&#x503C;">02. &#x4FEE;&#x6539; Swiper &#x4F7F;&#x8CC7;&#x6599;&#x6E90;&#x70BA;&#x7236;&#x5B50;&#x7D44;&#x4EF6;&#x50B3;&#x503C;<span id="s2"></span></h1>
+<ul>
+<li>&#x6B65;&#x9A5F;&#x4E00; : &#x5728; <code>{workspace}\{project_name}\src\pages\home\Home.vue</code> &#x65B0;&#x589E;&#x7236;&#x7D44;&#x4EF6;&#x7684;&#x503C;&#xFF0C;&#x4E26;&#x50B3;&#x905E;&#x7D66;&#x5B50;&#x7D44;&#x4EF6; <code>{workspace}\{project_name}\src\pages\home\components\Swiper.vue</code></li>
+</ul>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">home-header</span> <span class="hljs-attr">:city</span>=<span class="hljs-string">&quot;city&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">home-header</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">home-swiper</span> <span class="hljs-attr">:list</span>=<span class="hljs-string">&quot;swiperList&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">home-swiper</span>&gt;</span> <span class="hljs-comment">&lt;!-- 3. &#x7236;&#x7D44;&#x4EF6;&#x5F80;&#x5B50;&#x7D44;&#x4EF6;&#x50B3;&#x905E; --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">home-icons</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">home-icons</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">home-recommend</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">home-recommend</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">home-weekend</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">home-weekend</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+<span class="hljs-keyword">import</span> HomeHeader <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./components/Header&apos;</span>
+<span class="hljs-keyword">import</span> HomeSwiper <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./components/Swiper&apos;</span>
+<span class="hljs-keyword">import</span> HomeIcons <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./components/Icons&apos;</span>
+<span class="hljs-keyword">import</span> HomeRecommend <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./components/Recommend&apos;</span>
+<span class="hljs-keyword">import</span> HomeWeekend <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./components/Weekend&apos;</span>
+<span class="hljs-keyword">import</span> axios <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;axios&apos;</span>
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+  name: <span class="hljs-string">&apos;Home&apos;</span>,
+  components: {
+    HomeHeader,
+    HomeSwiper,
+    HomeIcons,
+    HomeRecommend,
+    HomeWeekend
+  },
+  data () {
+    <span class="hljs-keyword">return</span> {
+      city: <span class="hljs-string">&apos;&apos;</span>,
+      swiperList: [] <span class="hljs-comment">// 1. &#x6DFB;&#x52A0; swiperList &#x6578;&#x7D44;</span>
+    }
+  },
+  methods: {
+    getHomeInfo () {
+      axios.get(<span class="hljs-string">&apos;/static/mock/index.json&apos;</span>)
+        .then(<span class="hljs-keyword">this</span>.getHomeInfoSucc)
+    },
+    getHomeInfoSucc (res) {
+      res = res.data
+      <span class="hljs-keyword">if</span> (res.ret &amp;&amp; res.data) {
+        <span class="hljs-keyword">const</span> data = res.data
+        <span class="hljs-keyword">this</span>.city = data.city
+        <span class="hljs-keyword">this</span>.swiperList = data.swiperList <span class="hljs-comment">// 2. &#x8A2D;&#x5B9A; swiperList &#x503C;&#xFF0C;&#x4E26;&#x4E14;&#x6B64;&#x503C;&#x4F86;&#x6E90;&#x65BC;&#x5F8C;&#x7AEF;&#x8ACB;&#x6C42;</span>
+      }
+    }
+  },
+  mounted () {
+    <span class="hljs-keyword">this</span>.getHomeInfo()
+  }
+}
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="undefined">
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+</code></pre>
+<ul>
+<li>&#x6B65;&#x9A5F;&#x4E8C; : &#x4FEE;&#x6539; <code>{workspace}\{project_name}\src\pages\home\components\Swiper.vue</code> &#x4EE5;&#x63A5;&#x6536;&#x7236;&#x7D44;&#x4EF6;&#x50B3;&#x905E;&#x4E4B;&#x53C3;&#x6578;</li>
+</ul>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;wrapper&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">swiper</span> <span class="hljs-attr">:options</span>=<span class="hljs-string">&quot;swiperOption&quot;</span>&gt;</span>
+      <span class="hljs-comment">&lt;!-- 2. &#x4F7F;&#x7528; list &#x4F5C;&#x70BA;&#x5FAA;&#x74B0; --&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">swiper-slide</span> <span class="hljs-attr">v-for</span>=<span class="hljs-string">&quot;item of list&quot;</span> <span class="hljs-attr">:key</span>=<span class="hljs-string">&quot;item.id&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;swiper-img&quot;</span> <span class="hljs-attr">:src</span>=<span class="hljs-string">&quot;item.imgUrl&quot;</span> /&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">swiper-slide</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;swiper-pagination&quot;</span> <span class="hljs-attr">slot</span>=<span class="hljs-string">&quot;pagination&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">swiper</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+  name: <span class="hljs-string">&apos;HomeSwiper&apos;</span>,
+  <span class="hljs-comment">// 1. &#x4F7F;&#x7528; list &#x63A5;&#x6536;&#x7236;&#x7D44;&#x4EF6;&#x50B3;&#x905E;&#x7684;&#x53C3;&#x6578;&#xFF0C;&#x4E26;&#x4F7F;&#x7528; Array &#x4F5C;&#x70BA;&#x8B8A;&#x6578;&#x578B;&#x614B;</span>
+  props: {
+    list: <span class="hljs-built_in">Array</span>
+  },
+  data () {
+    <span class="hljs-keyword">return</span> {
+      swiperOption: {
+        pagination: <span class="hljs-string">&apos;.swiper-pagination&apos;</span>,
+        loop: <span class="hljs-literal">true</span>
+      }
+    }
+  }
+}
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">style</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;stylus&quot;</span> <span class="hljs-attr">scoped</span>&gt;</span><span class="css">
+  <span class="hljs-selector-class">.wrapper</span> &gt;&gt;&gt; <span class="hljs-selector-class">.swiper-pagination-bullet-active</span>
+    <span class="hljs-selector-tag">background</span>: <span class="hljs-selector-id">#fff</span> !<span class="hljs-selector-tag">important</span>
+  <span class="hljs-selector-class">.wrapper</span>
+    <span class="hljs-selector-tag">overflow</span> <span class="hljs-selector-tag">hidden</span>
+    <span class="hljs-selector-tag">width</span><span class="hljs-selector-pseudo">:100</span>%
+    <span class="hljs-selector-tag">height</span><span class="hljs-selector-pseudo">:0</span>
+    <span class="hljs-selector-tag">padding-bottom</span><span class="hljs-selector-pseudo">:25.3</span>%
+    <span class="hljs-selector-tag">background</span>:<span class="hljs-selector-id">#eee</span>
+    <span class="hljs-selector-class">.swiper-img</span>
+      <span class="hljs-selector-tag">width</span>: 100%
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+</code></pre>
+<ul>
+<li>&#x6B65;&#x9A5F;&#x4E09; : &#x5728;&#x4E0A;&#x4E00;&#x500B;&#x6B65;&#x9A5F;&#x5275;&#x5EFA;&#x5B8C;&#x7562;&#x5F8C;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x6210;&#x529F;&#x63A5;&#x6536;&#x6578;&#x7D44;&#xFF0C;&#x4F46;&#x6703;&#x767C;&#x73FE;&#x9801;&#x9762;&#x986F;&#x793A;&#x7684;&#x9996;&#x5716;&#x53CD;&#x800C;&#x662F; ajax &#x4E2D;&#x7684;&#x6700;&#x5F8C;&#x4E00;&#x5F35; ? &#x800C;&#x9019;&#x539F;&#x56E0;&#x662F;&#x56E0;&#x70BA; swiper &#x4E00;&#x958B;&#x59CB;&#x662F;&#x7531;&#x7A7A;&#x6578;&#x7D44;&#x5EFA;&#x7ACB;&#x7684;&#xFF0C;&#x5728;&#x63A5;&#x6536;&#x5230;&#x5F8C;&#x7AEF;&#x53C3;&#x6578;&#x5F8C;&#x624D;&#x6E32;&#x67D3;&#x6240;&#x9020;&#x6210;&#x7684;&#x539F;&#x56E0;&#x3002;&#x8981;&#x89E3;&#x9019;&#x500B;&#x554F;&#x984C;&#x7684;&#x65B9;&#x6CD5;&#x53EA;&#x8981;&#x5728; <code>{workspace}\{project_name}\src\pages\home\components\Swiper.vue</code> &#x4E2D;&#x7684; swiper &#x6DFB;&#x52A0;&#x4E00;&#x500B; <code>v-if=&quot;list.length&quot;</code> &#x7684;&#x5224;&#x65B7;&#x5C31;&#x597D;&#xFF0C;&#x9019;&#x6A23;&#x5C31;&#x6703;&#x5728;&#x6709;&#x503C;&#x7684;&#x6642;&#x5019;&#x624D;&#x9032;&#x884C;&#x5275;&#x5EFA;</li>
+</ul>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;wrapper&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">swiper</span> <span class="hljs-attr">:options</span>=<span class="hljs-string">&quot;swiperOption&quot;</span> <span class="hljs-attr">v-if</span>=<span class="hljs-string">&quot;list.length&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">swiper-slide</span> <span class="hljs-attr">v-for</span>=<span class="hljs-string">&quot;item of list&quot;</span> <span class="hljs-attr">:key</span>=<span class="hljs-string">&quot;item.id&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;swiper-img&quot;</span> <span class="hljs-attr">:src</span>=<span class="hljs-string">&quot;item.imgUrl&quot;</span> /&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">swiper-slide</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;swiper-pagination&quot;</span> <span class="hljs-attr">slot</span>=<span class="hljs-string">&quot;pagination&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">swiper</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+</code></pre>
+<ul>
+<li>&#x6B65;&#x9A5F;&#x56DB; : &#x5728;&#x8A2D;&#x5B9A;&#x597D;&#x8CC7;&#x6599;&#x5F8C;&#xFF0C;&#x6703;&#x767C;&#x73FE;&#x5716;&#x7247;&#x7684;&#x6BD4;&#x4F8B;&#x9AD8;&#x5EA6;&#x4E0D;&#x5920;&#xFF0C;&#x9019;&#x6642;&#x53EF;&#x4EE5;&#x518D;&#x9032;&#x884C;&#x8ABF;&#x6574;</li>
+</ul>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">style</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;stylus&quot;</span> <span class="hljs-attr">scoped</span>&gt;</span><span class="undefined">
+  .wrapper &gt;&gt;&gt; .swiper-pagination-bullet-active
+    background: #fff !important
+  .wrapper
+    overflow hidden
+    width:100%
+    height:0
+    padding-bottom: 31.3%; // &#x5C07;&#x6B64;&#x6BD4;&#x4F8B;&#x7531; 25.3% &#x8ABF;&#x6574;&#x81F3; 31.3%
+    background:#eee
+    .swiper-img
+      width: 100%
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+</code></pre>
+<ul>
+<li>&#x6B65;&#x9A5F;&#x4E94; : &#x6DFB;&#x52A0; computed &#x8A08;&#x7B97;&#x5C6C;&#x6027;&#xFF0C;&#x8B93;&#x7A7A;&#x6578;&#x7D44;&#x7684;&#x5224;&#x65B7;&#x5728;&#x6B64;&#x9032;&#x884C;&#xFF0C;&#x512A;&#x5316;&#x9801;&#x9762;&#x5167;&#x5BB9;</li>
+</ul>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;wrapper&quot;</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- 2. &#x66FF;&#x63DB;&#x5224;&#x65B7;&#x7684;&#x65B9;&#x5F0F; --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">swiper</span> <span class="hljs-attr">:options</span>=<span class="hljs-string">&quot;swiperOption&quot;</span> <span class="hljs-attr">v-if</span>=<span class="hljs-string">&quot;showSwiper&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">swiper-slide</span> <span class="hljs-attr">v-for</span>=<span class="hljs-string">&quot;item of list&quot;</span> <span class="hljs-attr">:key</span>=<span class="hljs-string">&quot;item.id&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;swiper-img&quot;</span> <span class="hljs-attr">:src</span>=<span class="hljs-string">&quot;item.imgUrl&quot;</span> /&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">swiper-slide</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;swiper-pagination&quot;</span> <span class="hljs-attr">slot</span>=<span class="hljs-string">&quot;pagination&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">swiper</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+  name: <span class="hljs-string">&apos;HomeSwiper&apos;</span>,
+  props: {
+    list: <span class="hljs-built_in">Array</span>
+  },
+  data () {
+    <span class="hljs-keyword">return</span> {
+      swiperOption: {
+        pagination: <span class="hljs-string">&apos;.swiper-pagination&apos;</span>,
+        loop: <span class="hljs-literal">true</span>
+      }
+    }
+  },
+  <span class="hljs-comment">// 1. &#x6DFB;&#x52A0;&#x8A08;&#x7B97;&#x5C6C;&#x6027;</span>
+  computed: {
+    showSwiper () {
+      <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.list.length
+    }
+  }
+}
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">style</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;stylus&quot;</span> <span class="hljs-attr">scoped</span>&gt;</span><span class="css">
+  <span class="hljs-selector-class">.wrapper</span> &gt;&gt;&gt; <span class="hljs-selector-class">.swiper-pagination-bullet-active</span>
+    <span class="hljs-selector-tag">background</span>: <span class="hljs-selector-id">#fff</span> !<span class="hljs-selector-tag">important</span>
+  <span class="hljs-selector-class">.wrapper</span>
+    <span class="hljs-selector-tag">overflow</span> <span class="hljs-selector-tag">hidden</span>
+    <span class="hljs-selector-tag">width</span><span class="hljs-selector-pseudo">:100</span>%
+    <span class="hljs-selector-tag">height</span><span class="hljs-selector-pseudo">:0</span>
+    <span class="hljs-selector-tag">padding-bottom</span>: 31<span class="hljs-selector-class">.3</span>%;
+    <span class="hljs-selector-tag">background</span>:<span class="hljs-selector-id">#eee</span>
+    <span class="hljs-selector-class">.swiper-img</span>
+      <span class="hljs-selector-tag">width</span>: 100%
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+</code></pre>
+<h1 id="03-&#x600E;&#x9EBC;&#x5C07;&#x5176;&#x4ED6;&#x7684;&#x7D44;&#x4EF6;&#x6539;&#x6210;&#x7236;&#x5B50;&#x7D44;&#x4EF6;&#x50B3;&#x503C;&#x5462;-">03. &#x600E;&#x9EBC;&#x5C07;&#x5176;&#x4ED6;&#x7684;&#x7D44;&#x4EF6;&#x6539;&#x6210;&#x7236;&#x5B50;&#x7D44;&#x4EF6;&#x50B3;&#x503C;&#x5462; ?<span id="s3"></span></h1>
+<blockquote>
+<p>&#x5176;&#x5BE6;&#x4E0A;&#x9762;&#x5169;&#x500B;&#x65B9;&#x6CD5;&#x5DF2;&#x7D93;&#x6F14;&#x793A;&#x4E86;&#x5982;&#x4F55;&#x64CD;&#x4F5C;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x8B93;&#x6211;&#x5011;&#x5728;&#x9019;&#x908A;&#x81EA;&#x5DF1;&#x4FEE;&#x6539;&#x5427; ! &#x4F46;&#x662F;&#x4F60;&#x4E5F;&#x53EF;&#x4EE5; <a href="https://github.com/leisure0621/vue_workspace" target="_blank">&#x9032;&#x5165; github &#x4E0B;&#x8F09;</a> &#xFF0C;&#x4E0B;&#x8F09;&#x597D;&#x5F8C;&#x6B64;&#x6B21;&#x9805;&#x76EE;&#x70BA; vue1 &#x9019;&#x500B; project</p>
+</blockquote>
+<h1 id="04-&#x8B93;-icons-&#x7D44;&#x4EF6;&#x4E0D;&#x5DE6;&#x53F3;&#x6EFE;&#x52D5;">04. &#x8B93; Icons &#x7D44;&#x4EF6;&#x4E0D;&#x5DE6;&#x53F3;&#x6EFE;&#x52D5;<span id="s4"></span></h1>
+<ul>
+<li>&#x6B65;&#x9A5F;&#x4E00; : &#x8A2D;&#x5B9A; options &#x5728; swiper &#x4E0A;</li>
+</ul>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icons&quot;</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- 1. &#x8A2D;&#x5B9A; options --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">swiper</span> <span class="hljs-attr">:options</span>=<span class="hljs-string">&quot;swiperOption&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">swiper-slide</span> <span class="hljs-attr">v-for</span>=<span class="hljs-string">&quot;(page, index) of pages&quot;</span> <span class="hljs-attr">:key</span>=<span class="hljs-string">&quot;index&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon&quot;</span> <span class="hljs-attr">v-for</span>=<span class="hljs-string">&quot;item of page&quot;</span> <span class="hljs-attr">:key</span>=<span class="hljs-string">&quot;item.id&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-img&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-img-content&quot;</span> <span class="hljs-attr">:src</span>=<span class="hljs-string">&quot;item.imgUrl&quot;</span> /&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-desc&quot;</span>&gt;</span>{{item.desc}}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">swiper-slide</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">swiper</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+</code></pre>
+<ul>
+<li>&#x6B65;&#x9A5F;&#x4E8C; : &#x8A2D;&#x5B9A;&#x53C3;&#x6578;&#x503C;&#xFF0C;&#x4F5C;&#x7528;&#x70BA;&#x7981;&#x6B62;&#x81EA;&#x52D5;&#x64A5;&#x653E;</li>
+</ul>
+<pre><code class="lang-js">  data () {
+    <span class="hljs-keyword">return</span> {
+      swiperOption: {
+        autoplay: <span class="hljs-literal">false</span>
+      }
+    }
+  },
+</code></pre>
+<h1 id="05-&#x600E;&#x9EBC;&#x4FEE;&#x6539;&#x9805;&#x76EE;&#x540D;&#x7A31;-">05. &#x600E;&#x9EBC;&#x4FEE;&#x6539;&#x9805;&#x76EE;&#x540D;&#x7A31; ?<span id="s5"></span></h1>
+<ul>
+<li>&#x6B65;&#x9A5F;&#x4E00; : &#x5C07; <code>{workspace}\{project_name}</code> &#x7684; <code>project_name</code> &#x6539;&#x6210;&#x4F60;&#x8981;&#x7684;&#x65B0;&#x540D;&#x5B50;</li>
+<li>&#x6B65;&#x9A5F;&#x4E8C; : &#x4FEE;&#x6539; <code>{workspace}\{project_name}\package.json</code> &#x6587;&#x4EF6;&#x4E2D;&#x7684; <code>name</code> &#x53C3;&#x6578;&#x503C;</li>
+</ul>
+<pre><code class="lang-json"><span class="hljs-comment">//...</span>
+<span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;vue1&quot;</span>,
+<span class="hljs-comment">//...</span>
+</code></pre>
+<ul>
+<li>&#x6B65;&#x9A5F;&#x4E09; : &#x522A;&#x9664; <code>{workspace}\{project_name}\node_modules</code> &#x76EE;&#x9304;</li>
+<li>&#x6700;&#x7D42; : &#x57F7;&#x884C; <code>npm run install</code> &#xFF0C;&#x57F7;&#x884C;&#x5B8C;&#x7562;&#x5373;&#x53EF;</li>
+</ul>
+<hr>
+<ul>
+<li>&#x5B78;&#x7FD2;&#x5730;&#x5716;&#x5C0D;&#x61C9;: <ul>
+<li><u>&#x6155;&#x514B;&#x7DB2;</u> &gt; <u>&#x6B65;&#x9AA4;&#x4E8C;&#xFF1A;Vue&#x57FA;&#x7840;+&#x4EFF;&#x53BB;&#x54EA;&#x7F51;&#x7535;&#x5546;&#x5B9E;&#x6218;</u> &gt; <u>4.Vue&#x4E0E;React&#x9AD8;&#x7EA7;&#x6846;&#x67B6;&#x5F00;&#x53D1;</u> &gt; <u>&#x9879;&#x76EE;-&#x9996;&#x9875;&#x5F00;&#x53D1;</u> &gt; <u>2-12.Vue&#x9879;&#x76EE;&#x9996;&#x9875;-&#x9996;&#x9875;&#x7236;&#x5B50;&#x7EC4;&#x7EC4;&#x4EF6;&#x95F4;&#x4F20;&#x503C;</u></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><a href="https://blog.justforlxz.com/2019/12/08/vue-component-props/" target="_blank">Vue&#x7236;&#x5B50;&#x7EC4;&#x4EF6;&#x4F20;&#x503C; &#x2014;&#x2014; props &amp; $emit </a></li>
+<li><a href="https://cn.vuejs.org/v2/guide/components-props.html" target="_blank">Prop &#x8A73;&#x7D30;&#x8AAA;&#x660E;</a></li>
+<li><a href="https://juejin.cn/post/6844904001146716174" target="_blank">vue &#x5B50;&#x7EC4;&#x4EF6; props &#x53C2;&#x6570;&#x7C7B;&#x578B;&#x95EE;&#x9898;</a></li>
+<li><a href="https://blog.csdn.net/weixin_37590454/article/details/99739632" target="_blank">Vue &#x4FEE;&#x6539;&#x9879;&#x76EE;&#x540D;&#x79F0;</a></li>
+</ul>
+
+<script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../14.模擬發送ajax請求/14.模擬發送ajax請求.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 14.模擬發送ajax請求">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"15.父子組件傳值","level":"1.2.1.15","depth":3,"previous":{"title":"14.模擬發送ajax請求","level":"1.2.1.14","depth":3,"path":"慕課網/01.首頁開發/14.模擬發送ajax請求/14.模擬發送ajax請求.md","ref":"慕課網/01.首頁開發/14.模擬發送ajax請求/14.模擬發送ajax請求.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-search","search-pro","back-to-top-button","code","pageview-count","popup"],"pluginsConfig":{"search-pro":{"cutWordLib":"nodejieba","defineWord":["小需求","基础建设"]},"popup":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"pageview-count":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"慕課網/01.首頁開發/15.父子組件傳值/15.父子組件傳值.md","mtime":"2022-01-30T08:05:33.066Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-01-30T08:08:54.766Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
